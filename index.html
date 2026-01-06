@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Shawn Wyatt | Forever Chasing A Dream</title>
+
 <style>
 body {
 margin: 0;
@@ -12,9 +13,11 @@ background: #0b0b0b;
 color: #ffffff;
 line-height: 1.6;
 }
+
 header {
 height: 100vh;
-background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.9)),
+background:
+linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.9)),
 url('artist.jpg');
 background-size: cover;
 background-position: 50% 20%;
@@ -24,14 +27,17 @@ justify-content: center;
 text-align: center;
 padding: 20px;
 }
-h1 {
-font-size: 3rem;
-margin-bottom: 10px;
+
+h1 { font-size: 3rem; margin-bottom: 10px; }
+h2 { margin-top: 60px; font-size: 2rem; }
+
+section {
+padding: 60px 20px;
+max-width: 900px;
+margin: auto;
+text-align: center;
 }
-h2 {
-margin-top: 60px;
-font-size: 2rem;
-}
+
 .btn {
 display: inline-block;
 margin-top: 20px;
@@ -42,23 +48,33 @@ text-decoration: none;
 font-weight: bold;
 border-radius: 30px;
 }
-section {
-padding: 60px 20px;
-max-width: 900px;
-margin: auto;
-text-align: center;
+
+iframe {
+width: 100%;
+max-width: 600px;
+border-radius: 12px;
+margin: 20px auto;
 }
+
+input {
+padding: 12px;
+width: 260px;
+border-radius: 5px;
+border: none;
+margin-top: 10px;
+}
+
 footer {
 padding: 20px;
 text-align: center;
 background: #000;
 font-size: 0.9rem;
 }
-a {
-color: #c59d5f;
-}
+
+a { color: #c59d5f; }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -69,24 +85,73 @@ color: #c59d5f;
 </div>
 </header>
 
+<!-- ALBUM SECTION -->
 <section id="album">
 <h2>🎶 Debut Album</h2>
 <p><strong>Forever Chasing A Dream</strong></p>
-<p>
-<a href="https://music.apple.com/us/album/forever-chasing-a-dream/1764976283" target="_blank">Apple Music</a> •
-<a href="https://open.spotify.com/artist/5YqxkdxiC5HZDPq9Es1exA" target="_blank">Spotify</a>
-</p>
+
+<!-- Spotify Player -->
+<iframe
+src="https://open.spotify.com/embed/artist/5YqxkdxiC5HZDPq9Es1exA"
+height="352"
+frameborder="0"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+
+<!-- Apple Music Player -->
+<iframe
+allow="autoplay *; encrypted-media *;"
+height="450"
+style="background:transparent;"
+sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation"
+src="https://embed.music.apple.com/us/album/forever-chasing-a-dream/1764976283">
+</iframe>
 </section>
 
+<!-- EMAIL SIGNUP -->
 <section>
-<h2>🔥 What’s Next</h2>
-<p>
-A new chapter is loading.<br/>
-New music. Deeper stories. Elevated sound.
+<h2>📬 Join the Inner Circle</h2>
+<p>Be the first to hear new music, visuals, and announcements.</p>
+
+<!-- MAILCHIMP / CONVERTKIT PLACEHOLDER -->
+<form action="#" method="post">
+<input type="email" placeholder="Enter your email" required />
+<br/>
+<button class="btn" type="submit">Sign Up</button>
+</form>
+
+<p style="font-size:0.9rem; margin-top:10px;">
+No spam. Just music & updates.
 </p>
-<p><em>The next project is on the way.</em></p>
 </section>
 
+<!-- PRESS / EPK -->
+<section>
+<h2>📰 Press / EPK</h2>
+
+<p>
+<strong>Shawn Wyatt</strong> is a soulful R&B artist rooted in
+real emotion, timeless melodies, and lived experience.
+Influenced by 90s R&B with a modern edge, his music blends
+vulnerability, resilience, and passion.
+</p>
+
+<p>
+His debut album <em>Forever Chasing A Dream</em> explores
+perseverance, love, and purpose — marking the beginning of
+a powerful new chapter.
+</p>
+
+<p>
+📍 Richmond, VA / Washington, DC<br/>
+🎶 Genre: R&B / Soul<br/>
+📧 Contact: <a href="mailto:booking@yourname.com">booking@yourname.com</a>
+</p>
+
+<a href="#" class="btn">Download Full EPK</a>
+</section>
+
+<!-- SOCIAL -->
 <section>
 <h2>📲 Follow the Journey</h2>
 <p>
